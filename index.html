@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.2">
+        <title>My Webpage</title>
+        <style>
+            body {
+                background-color: gold;
+            }
+
+            .responsive-nav {
+                background-color: black;
+                color: antiquewhite;
+                padding: 20px;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                position: relative;
+            }
+           
+
+            
+            #menu {
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                padding: 0;
+                margin: 0;
+            }
+            #menu li {
+                margin-right: 20px;
+            }
+
+            #menu a {
+                color: gold;
+                padding: 10px;
+                text-decoration: none;
+            }
+            @media (max-width: 300px) {
+            }
+            .menu.toggle {
+                display: block;
+            }
+            #menu {
+                display: none; 
+             flex-direction: column;
+               gap: 2rem;
+              align-items: center; 
+                width: 100%; 
+                margin-top: 40px;
+            }
+            #menu.show {
+                display: flex;
+
+            }
+        </style>
+    </head>
+    <body>
+        
+        <nav class="responsive-nav" role="navigation" aria-label="Main Navigation">
+            <div class="menu-toggle" onclick="toggleMenu()" aria-controls="menu"
+            aria-expanded="false" aria-label="Toggle Navigation">&#9776;</div>
+
+            <ul id="menu" role="menu">
+            <li role="none"><a href="home.html" role="menuitem">Home</a></li>
+            <li role="none"><a href="Table.html" role="menuitem">Table</a></li>
+            <li role="none"><a href="Intro.html" role="menuitem">About us</a></li>
+            <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+            <li role="none"><a href="link.html" role="menuitem">Order</a></li>
+            </ul>
+            </nav>
+            <script src="script.js"></script>
+            <style>
+            h1 {
+                background-color: yellow;
+                 border: 26px solid;
+                  color: royalblue;
+                  text-align: center;
+                  font-size: 50px;
+             }
+    
+        
+            header {
+             font-size: 40px;
+             word-spacing: 15px;
+             color: blue;
+             
+            }
+        </style>
+
+    <body>
+        <h1>Debby's Fashion World.</h1>
+        <header>
+            <a href="Intro.html">
+                Content
+            </a>
+            <a href="Table.html">
+                InformationTable
+            </a>
+            <a href="Contact.html">
+                ContactForm
+            </a>
+        </header>
+        <img src="Logo.jpeg " width="500">
+        <blockquote>
+            <p>Welcome to Debby's fashion world. This is a store where you can find different types of cloth.
+                We deal with female wear, male wear and also children wears. Lovely outfit that will bring 
+            out the beauty in you.</p>
+        </blockquote>
+        <ul>
+        <h3>To know more about this page</h3>
+       <a href="https://www.techjaunt.com/" target="_blank">
+        <li>Visit Techjaunt</li>
+       </a>
+        </ul>
+        <section>
+        <h2>Debby's Fashion World Contents</h2>
+       <ul>
+        <li>Introduction</li>
+        <li>Table of information</li>
+        <li>Contact form</li>
+       </ul>
+       <h2>What u need to know about us</h2>
+        
+        <nav><ul>
+        <h3>To send us a mail</h3>
+        <a href="mailto:debbyabiebhode@gmail.com">
+        <li>Email Debby's Fashion World</li>
+        </a><br>
+        <h3>Want to know more about us</h3>
+       <a href="https://www.debby'sfashionworld.com/" target="_blank">
+        <li>Visit Debby's Fashion World</li>
+       </a>
+       </ul></nav>
+        </section>
+       <br><br><br>
+       <section>
+       <h2>Information Table</h2>
+       <table border="1" cellpadding="40" cellspacing="0">
+        <tr>
+            <th>Item</th>
+            <th>Description</th>
+            <th>Quantity</th>
+        </tr>
+        <tr>
+            <td>Female Wears</td>
+            <td>Skirt,blouse and gown</td>
+            <td>60</td>
+        </tr>
+        <tr>
+            <td>Male Wears</td>
+            <td>Jeans,shirt and polo</td>
+            <td>40</td>
+        </tr>
+        <tr>
+            <td>Children Wears</td>
+            <td>Ball gown,suit,polo and jeans</td>
+            <td>90</td>
+        </tr>
+       </table>
+       </section>
+       <br><br>
+       <section>
+       <h2>Contact Form</h2>
+       <form>
+        <label>Username:</label>
+        <input required type="text"/>
+        <br><br><br>
+        <label>Email:</label>
+        <input required type="Email"/>
+        <br><br><br>
+        <label>Password:</label>
+        <input required type="Password"/>
+        <br><br><br>
+        <label>Gender:</label>
+        <input type="radio" id="Male" name="Gender" value="Male"/>
+        <label for="Male">Male</label>
+        <input type="radio" id="Female" name="Gender" value="Female"/>
+        <label for="Female">Female</label>
+        <br><br>
+       <label>Do you want to patronize us:</label>
+        <input type="checkbox" id="Subscribe" name="Subscribe">
+        <label for="Subscribe">Yes i want to</label>
+        <br><br>
+        <label>What are you buying from us:</label>
+        <input required type="text"/>
+        <br><br>
+        <label>Numbers of item:</label>
+        <input required type="number"/>
+        <br><br>
+        <label>Date of delivery:</label>
+        <input required type="Date"/>
+        <br><br>
+        Comment: <br>
+        <textarea required cols="30"; rows="15"; placeholder="Enter your comment here"></textarea>
+        <br><br>
+        <h4>Thanks for your patronage.</h4>
+        <input type="submit" value="Submit">
+        </form>
+       </section>
+    </body>
+</html>
+
